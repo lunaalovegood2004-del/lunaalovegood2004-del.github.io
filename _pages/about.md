@@ -1,54 +1,66 @@
 ---
-
 permalink: /
-title: "Liu Changyu | Digital Marketing & AI"
+title: "刘长羽 | 个人主页"
 author_profile: true
 redirect_from:
+  - /about/
+  - /about.html
+---
 
-* /about/
-* /about.html
+# 你好，我是刘长羽 👋
+
+**新闻与传播硕士 · 数字营销 · AI**
+
+我是一名新闻与传播专业硕士研究生，研究方向为**数字营销**。
+
+我对数字营销、社交媒体、内容创作以及人工智能在营销领域的应用感兴趣。
+
+目前正在学习如何将**传播学 + 数字营销 + AI**结合起来，并通过课程作业、个人项目和实践不断积累作品。
 
 ---
 
-# Hello, I'm Liu Changyu.
+## 🧩 我的技能
 
-**Communication MA · Digital Marketing · AI**
+- 数字营销
+- 社交媒体运营
+- 内容策划与创作
+- AI 工具应用
+- 用户与受众分析
+- 传播策略
+- 新媒体运营
 
-I am a graduate student in Communication, focusing on **Digital Marketing** and **AI-powered communication**.
+---
 
-I am interested in social media marketing, content strategy, consumer insights, and the application of AI in marketing.
+## 📁 我的项目
 
-## Skills
+### 数字营销项目
 
-* Digital Marketing
-* Social Media Marketing
-* Content Creation
-* AI Tools
-* Consumer & Audience Research
-* Communication Strategy
+学习和实践品牌如何利用社交媒体、数字平台和内容营销与用户建立联系。
 
-## Projects
+### AI × 数字营销
 
-### Digital Marketing Projects
+探索如何利用 AI 提高内容创作效率、分析用户需求，并辅助制定营销策略。
 
-Exploring how brands use social media, content, and digital platforms to connect with audiences.
+### 新媒体与传播项目
 
-### AI & Marketing
+围绕广告、新媒体、数字传播等方向完成课程研究和实践项目。
 
-Exploring how AI tools can improve content creation, marketing strategy, and audience insights.
+---
 
-### Communication Projects
+## 👩‍🎓 关于我
 
-Research and creative projects related to advertising, communication, and digital media.
+本科就读于**广告学专业**，目前正在攻读新闻与传播硕士学位，研究方向为**数字营销**。
 
-## About Me
+我希望在研究生阶段重点提升自己的：
 
-I am currently pursuing a Master's degree in Communication, with a focus on Digital Marketing.
+**数字营销能力 + AI 应用能力 + 内容创作能力**
 
-I am building my skills in **marketing, AI, content creation, and communication** and looking for opportunities to apply them in real-world projects.
+并通过实际项目不断积累自己的作品集，为未来的实习和工作做准备。
 
-## Contact
+---
 
-📧 Email: [13525991276@163.com](mailto:13525991276@163.com)
+## 📮 联系我
 
-💻 GitHub: lunaalovegood2004-del
+如果你对我的项目或作品感兴趣，欢迎联系我。
+
+**GitHub：** lunaalovegood2004-del
