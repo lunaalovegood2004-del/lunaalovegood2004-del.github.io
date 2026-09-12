@@ -29,7 +29,7 @@ redirect_from:
   </div>
 
   <div class="skill-card">
-    <h4>Content & Social Media</h4>
+    <h4>Language</h4>
     <p>雅思7.0 · 法语四级 · 大学英语6级</p>
   </div>
 
@@ -39,7 +39,7 @@ redirect_from:
   </div>
 
   <div class="skill-card">
-    <h4>Research</h4>
+    <h4>Design</h4>
     <p>Office办公软件 · figma · 剪映 </p>
   </div>
 </div>
