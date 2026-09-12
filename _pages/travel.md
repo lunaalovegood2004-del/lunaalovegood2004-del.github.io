@@ -82,10 +82,54 @@ author: "Name Name"
 .travel-photo-card:nth-child(2) { transform: translate(-50%, -50%) rotate(2deg); z-index: 3; }
 .travel-photo-card:nth-child(3) { transform: translate(-50%, -50%) rotate(-2deg); z-index: 2; }
 .travel-photo-card:nth-child(4) { transform: translate(-50%, -50%) rotate(4deg); z-index: 1; }
+
+/* 鼠标停留后，照片按 1 → 2 → 3 → 4 依次展开，而不是同时展开 */
+@keyframes travel-reveal-1 {
+  0%, 100% { transform: translate(-50%, -50%) translateY(-22px) rotate(0deg) scale(1.04); }
+}
+@keyframes travel-reveal-2 {
+  0%, 18% { transform: translate(-50%, -50%) rotate(2deg); }
+  19%, 100% { transform: translate(-50%, -50%) translateX(72px) rotate(3deg) scale(1.01); }
+}
+@keyframes travel-reveal-3 {
+  0%, 38% { transform: translate(-50%, -50%) rotate(-2deg); }
+  39%, 100% { transform: translate(-50%, -50%) translateX(-72px) translateY(10px) rotate(-3deg) scale(1.01); }
+}
+@keyframes travel-reveal-4 {
+  0%, 58% { transform: translate(-50%, -50%) rotate(4deg); }
+  59%, 100% { transform: translate(-50%, -50%) translateY(82px) rotate(1deg) scale(1.01); }
+}
+
 .travel-photo-stack:hover .travel-photo-card { box-shadow: 0 16px 34px rgba(0,0,0,.17); }
-.travel-photo-card:hover { z-index: 20 !important; transform: translate(-50%, -50%) translateY(-22px) rotate(0deg) scale(1.04) !important; box-shadow: 0 20px 40px rgba(0,0,0,.2); }
-@media (max-width: 600px) { .travel-photo-stack { height: 340px; } .travel-photo-card { width: 245px; height: 290px; } .travel-photo-card:hover { transform: translate(-50%, -50%) translateY(-15px) rotate(0deg) scale(1.02) !important; } }
-@media (prefers-reduced-motion: reduce) { .travel-photo-card { transition: none; } }
+.travel-photo-stack:hover .travel-photo-card:nth-child(1) { animation: travel-reveal-1 3.2s ease forwards; z-index: 4; }
+.travel-photo-stack:hover .travel-photo-card:nth-child(2) { animation: travel-reveal-2 3.2s ease forwards; z-index: 3; }
+.travel-photo-stack:hover .travel-photo-card:nth-child(3) { animation: travel-reveal-3 3.2s ease forwards; z-index: 2; }
+.travel-photo-stack:hover .travel-photo-card:nth-child(4) { animation: travel-reveal-4 3.2s ease forwards; z-index: 1; }
+
+@media (max-width: 600px) {
+  .travel-photo-stack { height: 340px; }
+  .travel-photo-card { width: 245px; height: 290px; }
+  @keyframes travel-reveal-2-mobile {
+    0%, 18% { transform: translate(-50%, -50%) rotate(2deg); }
+    19%, 100% { transform: translate(-50%, -50%) translateX(48px) rotate(3deg) scale(1.01); }
+  }
+  @keyframes travel-reveal-3-mobile {
+    0%, 38% { transform: translate(-50%, -50%) rotate(-2deg); }
+    39%, 100% { transform: translate(-50%, -50%) translateX(-48px) translateY(8px) rotate(-3deg) scale(1.01); }
+  }
+  @keyframes travel-reveal-4-mobile {
+    0%, 58% { transform: translate(-50%, -50%) rotate(4deg); }
+    59%, 100% { transform: translate(-50%, -50%) translateY(65px) rotate(1deg) scale(1.01); }
+  }
+  .travel-photo-stack:hover .travel-photo-card:nth-child(1) { animation: travel-reveal-1 3.2s ease forwards; }
+  .travel-photo-stack:hover .travel-photo-card:nth-child(2) { animation: travel-reveal-2-mobile 3.2s ease forwards; }
+  .travel-photo-stack:hover .travel-photo-card:nth-child(3) { animation: travel-reveal-3-mobile 3.2s ease forwards; }
+  .travel-photo-stack:hover .travel-photo-card:nth-child(4) { animation: travel-reveal-4-mobile 3.2s ease forwards; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .travel-photo-card { transition: none; animation: none !important; }
+}
 </style>
 
 <!-- sidebar author profile -->
