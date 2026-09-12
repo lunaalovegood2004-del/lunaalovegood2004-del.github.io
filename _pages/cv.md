@@ -11,18 +11,30 @@ redirect_from:
 
 Education
 ======
-*预计获得文学硕士，南京大学，2029
-* 文学学士学位，上海师范大学广告学，2026
 
-Work experience
+* **南京大学** — 新闻与传播硕士，数字营销方向，预计 2029
+* **上海师范大学** — 广告学文学学士，2026
+
+Experience
 ======
-* 上海千织护理有限公司
-  * 品牌pr实习生
-  * 负责博主seeding，数据追踪和效果优化
-    
 
-* 上海凯鹏广告公司
+* **上海千织护理有限公司**
+  * 品牌 PR 实习生
+  * 负责博主 Seeding、数据追踪与传播效果优化
+
+* **上海凯鹏广告公司**
   * 内容策划实习生
-  * 负责新日电动车，黛珂品牌的社媒内容策划
- 
-  
+  * 负责新日电动车、黛珂品牌的社媒内容策划
+
+Skills
+======
+
+* **Digital Marketing:** 社交媒体营销、品牌传播、内容营销、用户与受众分析
+* **Content:** 内容策划、社媒内容创作、Campaign 策划、新媒体运营
+* **AI:** AI 辅助内容创作、AI 工具应用、AI × Marketing
+* **Research:** 传播研究、文献分析、用户研究、数据追踪与效果分析
+
+Interests
+======
+
+Digital Marketing · Social Media · Content Strategy · AI & Communication · Consumer Behavior
