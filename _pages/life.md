@@ -40,9 +40,9 @@ author: "Name Name"
 
 <style>
 .life-photo-deck { margin: 2.5rem 0 3rem; text-align: center; }
-.life-photo-stack { position: relative; width: min(100%, 430px); height: 520px; margin: 0 auto; perspective: 1000px; }
-.life-photo-card { position: absolute; left: 50%; top: 50%; width: min(78%, 330px); height: 440px; padding: 10px 10px 34px; background: #fff; border: 1px solid rgba(0,0,0,.12); box-shadow: 0 10px 28px rgba(0,0,0,.13); transform-origin: 50% 90%; transform: translate(-50%, -50%) rotate(0deg); transition: transform .45s ease, box-shadow .45s ease, opacity .45s ease; cursor: pointer; overflow: hidden; }
-.life-photo-card img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.life-photo-stack { position: relative; width: min(100%, 470px); height: 560px; margin: 0 auto; }
+.life-photo-card { position: absolute; left: 50%; top: 50%; width: 360px; padding: 10px 10px 34px; background: #fff; border: 1px solid rgba(0,0,0,.12); box-shadow: 0 10px 28px rgba(0,0,0,.13); transform-origin: 50% 90%; transform: translate(-50%, -50%) rotate(0deg); transition: transform .45s ease, box-shadow .45s ease, opacity .45s ease; cursor: pointer; }
+.life-photo-card img { display: block; width: 100%; height: auto; max-width: none; object-fit: contain; image-rendering: auto; }
 .life-photo-card:nth-child(1) { transform: translate(-50%, -50%) rotate(-3deg); z-index: 8; }
 .life-photo-card:nth-child(2) { transform: translate(-50%, -50%) rotate(2deg); z-index: 7; }
 .life-photo-card:nth-child(3) { transform: translate(-50%, -50%) rotate(-2deg); z-index: 6; }
@@ -54,7 +54,7 @@ author: "Name Name"
 .life-photo-stack:hover .life-photo-card { box-shadow: 0 16px 34px rgba(0,0,0,.17); }
 .life-photo-card.is-moving { transform: translate(28%, -60%) rotate(9deg) !important; opacity: .98; z-index: 20 !important; }
 .life-photo-hint { margin: .75rem 0 0; font-size: .85rem; opacity: .65; }
-@media (max-width: 600px) { .life-photo-stack { height: 440px; } .life-photo-card { width: min(82%, 300px); height: 390px; } }
+@media (max-width: 600px) { .life-photo-stack { height: 470px; } .life-photo-card { width: min(82vw, 300px); } }
 @media (prefers-reduced-motion: reduce) { .life-photo-card { transition: none; } }
 </style>
 
