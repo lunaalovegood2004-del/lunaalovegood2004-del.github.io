@@ -1,7 +1,11 @@
 ---
-title: "Portfolio item number 1"
-excerpt: "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+title: "品牌 PR 与社交媒体传播实践"
+excerpt: "上海千织护理有限公司品牌 PR 实习：博主 seeding、数据追踪与效果优化"
 collection: portfolio
 ---
 
-This is an item in your portfolio. It can be have images or nice text. If you name the file .md, it will be parsed as markdown. If you name the file .html, it will be parsed as HTML. 
+在上海千织护理有限公司实习期间，我参与品牌 PR 相关工作，主要负责博主 seeding、数据追踪和效果优化。
+
+这段经历让我第一次比较完整地接触到品牌传播从执行、数据记录到效果复盘的过程，也让我开始思考内容、平台和传播效果之间的关系。
+
+**关键词：** 品牌 PR、博主 seeding、数据追踪、效果优化
