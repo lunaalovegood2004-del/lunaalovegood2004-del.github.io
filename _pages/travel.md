@@ -14,7 +14,7 @@ author: "Name Name"
   <section class="travel-memory">
     <h3>2010 · 西安</h3>
     <p>大唐不夜城和兵马俑</p>
-    <div class="travel-photo-stack" aria-label="2012年秦皇岛旅行照片">
+    <div class="travel-photo-stack" aria-label="2010年秦皇岛旅行照片">
       <div class="travel-photo-card"><div class="travel-photo-placeholder">秦皇岛<br><small>放入旅行照片</small></div></div>
       <div class="travel-photo-card"><div class="travel-photo-placeholder">秦皇岛<br><small>放入旅行照片</small></div></div>
       <div class="travel-photo-card"><div class="travel-photo-placeholder">秦皇岛<br><small>放入旅行照片</small></div></div>
@@ -36,29 +36,29 @@ author: "Name Name"
   <section class="travel-memory">
     <h3>2024 · 北京</h3>
     <p>哈利波特圆梦之旅</p>
-    <div class="travel-photo-stack" aria-label="2018年旅行照片">
-      <div class="travel-photo-card"><div class="travel-photo-placeholder">2018<br><small>放入旅行照片</small></div></div>
-      <div class="travel-photo-card"><div class="travel-photo-placeholder">2018<br><small>放入旅行照片</small></div></div>
-      <div class="travel-photo-card"><div class="travel-photo-placeholder">2018<br><small>放入旅行照片</small></div></div>
-      <div class="travel-photo-card"><div class="travel-photo-placeholder">2018<br><small>放入旅行照片</small></div></div>
-    </div>
-  </section>
-
-  <section class="travel-memory">
-    <h3>2026 · 大西北</h3>
-    <p>到祖国的西边去</p>
-    <div class="travel-photo-stack" aria-label="2021年旅行照片">
-      <div class="travel-photo-card"><div class="travel-photo-placeholder">2021<br><small>放入旅行照片</small></div></div>
-      <div class="travel-photo-card"><div class="travel-photo-placeholder">2021<br><small>放入旅行照片</small></div></div>
-      <div class="travel-photo-card"><div class="travel-photo-placeholder">2021<br><small>放入旅行照片</small></div></div>
-      <div class="travel-photo-card"><div class="travel-photo-placeholder">2021<br><small>放入旅行照片</small></div></div>
-    </div>
-  </section>
-
-  <section class="travel-memory">
-    <h3>2024 · 川西</h3>
-    <p>你知道吗，有一个地方叫稻城</p>
     <div class="travel-photo-stack" aria-label="2024年旅行照片">
+      <div class="travel-photo-card"><div class="travel-photo-placeholder">2018<br><small>放入旅行照片</small></div></div>
+      <div class="travel-photo-card"><div class="travel-photo-placeholder">2018<br><small>放入旅行照片</small></div></div>
+      <div class="travel-photo-card"><div class="travel-photo-placeholder">2018<br><small>放入旅行照片</small></div></div>
+      <div class="travel-photo-card"><div class="travel-photo-placeholder">2018<br><small>放入旅行照片</small></div></div>
+    </div>
+  </section>
+
+  <section class="travel-memory">
+    <h3>2025 · 川西 </h3>
+    <p>你知道吗，有一个地方叫稻城</p>
+    <div class="travel-photo-stack" aria-label="2025年旅行照片">
+      <div class="travel-photo-card"><div class="travel-photo-placeholder">2021<br><small>放入旅行照片</small></div></div>
+      <div class="travel-photo-card"><div class="travel-photo-placeholder">2021<br><small>放入旅行照片</small></div></div>
+      <div class="travel-photo-card"><div class="travel-photo-placeholder">2021<br><small>放入旅行照片</small></div></div>
+      <div class="travel-photo-card"><div class="travel-photo-placeholder">2021<br><small>放入旅行照片</small></div></div>
+    </div>
+  </section>
+
+  <section class="travel-memory">
+    <h3>2026 · 西北</h3>
+    <p>到祖国的西边去</p>
+    <div class="travel-photo-stack" aria-label="2026年旅行照片">
       <div class="travel-photo-card"><div class="travel-photo-placeholder">2024<br><small>放入旅行照片</small></div></div>
       <div class="travel-photo-card"><div class="travel-photo-placeholder">2024<br><small>放入旅行照片</small></div></div>
       <div class="travel-photo-card"><div class="travel-photo-placeholder">2024<br><small>放入旅行照片</small></div></div>
@@ -68,7 +68,7 @@ author: "Name Name"
 
   <section class="travel-memory">
     <h3>2026 · 西藏</h3>
-    <p>东躲西藏</p>
+    <p>放不下地，放不下天</p>
     <div class="travel-photo-stack" aria-label="2026年旅行照片">
       <div class="travel-photo-card"><div class="travel-photo-placeholder">2026<br><small>放入旅行照片</small></div></div>
       <div class="travel-photo-card"><div class="travel-photo-placeholder">2026<br><small>放入旅行照片</small></div></div>
