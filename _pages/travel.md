@@ -39,10 +39,10 @@ author: "Name Name"
   <section class="travel-memory">
     <h3>2024 · 北京</h3><p>哈利波特圆梦之旅</p>
     <div class="travel-photo-stack" aria-label="2024年北京旅行照片">
-      <div class="travel-photo-card"><div class="travel-photo-placeholder">北京<br><small>旅行照片</small></div></div>
-      <div class="travel-photo-card"><div class="travel-photo-placeholder">北京<br><small>旅行照片</small></div></div>
-      <div class="travel-photo-card"><div class="travel-photo-placeholder">北京<br><small>旅行照片</small></div></div>
-      <div class="travel-photo-card"><div class="travel-photo-placeholder">北京<br><small>旅行照片</small></div></div>
+      <div class="travel-photo-card"><img src="{{ '/images/20e309d4a5bb307ef2044d5deedc42北京.JPG' | relative_url }}" alt="2024年北京旅行照片 1"></div>
+      <div class="travel-photo-card"><img src="{{ '/images/3c306064879ff1b83c4ad979650ccf北京.JPG' | relative_url }}" alt="2024年北京旅行照片 2"></div>
+      <div class="travel-photo-card"><img src="{{ '/images/5d5aa759893b6916ea917904c3353b北京.JPG' | relative_url }}" alt="2024年北京旅行照片 3"></div>
+      <div class="travel-photo-card"><img src="{{ '/images/fa90d9721d4101bcc9739244f1f125北京.JPG' | relative_url }}" alt="2024年北京旅行照片 4"></div>
     </div>
     <p class="travel-photo-hint">悬停在照片上，慢慢翻一翻。</p>
   </section>
@@ -50,10 +50,10 @@ author: "Name Name"
   <section class="travel-memory">
     <h3>2025 · 川西</h3><p>你知道吗，有一个地方叫稻城</p>
     <div class="travel-photo-stack" aria-label="2025年川西旅行照片">
-      <div class="travel-photo-card"><div class="travel-photo-placeholder">川西<br><small>旅行照片</small></div></div>
-      <div class="travel-photo-card"><div class="travel-photo-placeholder">川西<br><small>旅行照片</small></div></div>
-      <div class="travel-photo-card"><div class="travel-photo-placeholder">川西<br><small>旅行照片</small></div></div>
-      <div class="travel-photo-card"><div class="travel-photo-placeholder">川西<br><small>旅行照片</small></div></div>
+      <div class="travel-photo-card"><img src="{{ '/images/40dfa9edc7e9cd5343266d95da09f1川西.JPG' | relative_url }}" alt="2025年川西旅行照片 1"></div>
+      <div class="travel-photo-card"><img src="{{ '/images/46df913c62b5f1ec8c07c63f0b34b6川西.JPG' | relative_url }}" alt="2025年川西旅行照片 2"></div>
+      <div class="travel-photo-card"><img src="{{ '/images/7ab01078c92915626743c17364b874川西.JPG' | relative_url }}" alt="2025年川西旅行照片 3"></div>
+      <div class="travel-photo-card"><img src="{{ '/images/e42b8a349c122ed3051fb74f4d1430川西.JPG' | relative_url }}" alt="2025年川西旅行照片 4"></div>
     </div>
     <p class="travel-photo-hint">悬停在照片上，慢慢翻一翻。</p>
   </section>
