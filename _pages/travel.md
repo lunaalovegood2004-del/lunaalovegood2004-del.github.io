@@ -49,10 +49,10 @@ author: "Name Name"
 .travel-memory { margin: 0 0 5rem; }
 .travel-memory h3 { margin-bottom: .45rem; font-size: 1.35rem; }
 .travel-memory p { margin-bottom: 1.5rem; }
-.travel-photo-stack { position: relative; width: min(100%, 470px); height: 430px; margin: 1.5rem auto 0; }
-.travel-photo-card { position: absolute; left: 50%; top: 50%; width: 300px; height: 340px; padding: 10px 10px 34px; background: #fff; border: 1px solid rgba(0,0,0,.12); box-shadow: 0 10px 28px rgba(0,0,0,.13); transform-origin: 50% 90%; transform: translate(-50%, -50%) rotate(0deg); transition: transform .45s ease, box-shadow .45s ease, opacity .45s ease; cursor: pointer; overflow: hidden; }
-.travel-photo-card img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; image-rendering: auto; }
-.travel-photo-placeholder { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center; background: #f4f4f1; color: #777; font-size: 1.05rem; line-height: 1.7; }
+.travel-photo-stack { position: relative; width: min(100%, 470px); height: 560px; margin: 2.5rem auto 3rem; text-align: center; }
+.travel-photo-card { position: absolute; left: 50%; top: 50%; width: 360px; padding: 10px 10px 34px; background: #fff; border: 1px solid rgba(0,0,0,.12); box-shadow: 0 10px 28px rgba(0,0,0,.13); transform-origin: 50% 90%; transform: translate(-50%, -50%) rotate(0deg); transition: transform .45s ease, box-shadow .45s ease, opacity .45s ease; cursor: pointer; }
+.travel-photo-card img { display: block; width: 100%; height: auto; max-width: none; object-fit: contain; image-rendering: auto; }
+.travel-photo-placeholder { width: 100%; height: auto; min-height: 420px; display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center; background: #f4f4f1; color: #777; font-size: 1.05rem; line-height: 1.7; }
 .travel-photo-placeholder small { font-size: .78rem; opacity: .7; }
 .travel-photo-card:nth-child(1) { transform: translate(-50%, -50%) rotate(-3deg); z-index: 6; }
 .travel-photo-card:nth-child(2) { transform: translate(-50%, -50%) rotate(2deg); z-index: 5; }
@@ -62,7 +62,7 @@ author: "Name Name"
 .travel-photo-card:nth-child(6) { transform: translate(-50%, -50%) rotate(2deg); z-index: 1; }
 .travel-photo-stack:hover .travel-photo-card { box-shadow: 0 16px 34px rgba(0,0,0,.17); }
 .travel-photo-card.is-moving { transform: translate(28%, -60%) rotate(9deg) !important; opacity: .98; z-index: 20 !important; }
-@media (max-width: 600px) { .travel-photo-stack { height: 350px; } .travel-photo-card { width: min(82vw, 300px); height: 290px; } }
+@media (max-width: 600px) { .travel-photo-stack { height: 470px; } .travel-photo-card { width: min(82vw, 300px); } .travel-photo-placeholder { min-height: 340px; } }
 @media (prefers-reduced-motion: reduce) { .travel-photo-card { transition: none; } }
 </style>
 
@@ -84,14 +84,8 @@ author: "Name Name"
         moving = false;
       }, 450);
     }
-    stack.addEventListener('mouseenter', function () {
-      if (timer) return;
-      timer = setInterval(flipPhoto, 900);
-    });
-    stack.addEventListener('mouseleave', function () {
-      clearInterval(timer);
-      timer = null;
-    });
+    stack.addEventListener('mouseenter', function () { if (timer) return; timer = setInterval(flipPhoto, 900); });
+    stack.addEventListener('mouseleave', function () { clearInterval(timer); timer = null; });
   });
 })();
 </script>
