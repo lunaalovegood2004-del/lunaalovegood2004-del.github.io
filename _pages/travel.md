@@ -6,17 +6,14 @@ author_profile: true
 author: "Name Name"
 ---
 
-旅行对我来说，不只是抵达一个地方，也是在不同的城市和风景里留下自己的生活记录。
-
-我想把这里做成一本慢慢翻的旅行相册：每一次旅行都用“年份 + 地点”记录下来，下面叠放几张照片。鼠标悬停时，照片会一张一张翻出来。
-
+读万卷书，也要行万里路。
 ## 旅行记录
 
 <div class="travel-memory-list">
 
   <section class="travel-memory">
-    <h3>2012 · 秦皇岛</h3>
-    <p>那一年去过秦皇岛，海边、沙滩，还有第一次认真记住的旅行。</p>
+    <h3>2010 · 西安</h3>
+    <p>大唐不夜城和兵马俑</p>
     <div class="travel-photo-stack" aria-label="2012年秦皇岛旅行照片">
       <div class="travel-photo-card"><div class="travel-photo-placeholder">秦皇岛<br><small>放入旅行照片</small></div></div>
       <div class="travel-photo-card"><div class="travel-photo-placeholder">秦皇岛<br><small>放入旅行照片</small></div></div>
@@ -26,8 +23,8 @@ author: "Name Name"
   </section>
 
   <section class="travel-memory">
-    <h3>2016 · 待补充地点</h3>
-    <p>把这一年的旅行记忆留在这里，之后再慢慢补上照片和文字。</p>
+    <h3>2017 · 埃及 </h3>
+    <p>人类畏惧时间，而时间畏惧金字塔</p>
     <div class="travel-photo-stack" aria-label="2016年旅行照片">
       <div class="travel-photo-card"><div class="travel-photo-placeholder">2016<br><small>放入旅行照片</small></div></div>
       <div class="travel-photo-card"><div class="travel-photo-placeholder">2016<br><small>放入旅行照片</small></div></div>
@@ -37,8 +34,8 @@ author: "Name Name"
   </section>
 
   <section class="travel-memory">
-    <h3>2018 · 待补充地点</h3>
-    <p>记录一次后来想起来，依然觉得很开心的旅行。</p>
+    <h3>2024 · 北京</h3>
+    <p>哈利波特圆梦之旅</p>
     <div class="travel-photo-stack" aria-label="2018年旅行照片">
       <div class="travel-photo-card"><div class="travel-photo-placeholder">2018<br><small>放入旅行照片</small></div></div>
       <div class="travel-photo-card"><div class="travel-photo-placeholder">2018<br><small>放入旅行照片</small></div></div>
@@ -48,8 +45,8 @@ author: "Name Name"
   </section>
 
   <section class="travel-memory">
-    <h3>2021 · 待补充地点</h3>
-    <p>有些地方去了很多年，照片翻出来的时候还是会想起当时的心情。</p>
+    <h3>2026 · 大西北</h3>
+    <p>到祖国的西边去</p>
     <div class="travel-photo-stack" aria-label="2021年旅行照片">
       <div class="travel-photo-card"><div class="travel-photo-placeholder">2021<br><small>放入旅行照片</small></div></div>
       <div class="travel-photo-card"><div class="travel-photo-placeholder">2021<br><small>放入旅行照片</small></div></div>
@@ -59,8 +56,8 @@ author: "Name Name"
   </section>
 
   <section class="travel-memory">
-    <h3>2024 · 待补充地点</h3>
-    <p>最近几年去过的地方，也想用照片的方式慢慢整理起来。</p>
+    <h3>2024 · 川西</h3>
+    <p>你知道吗，有一个地方叫稻城</p>
     <div class="travel-photo-stack" aria-label="2024年旅行照片">
       <div class="travel-photo-card"><div class="travel-photo-placeholder">2024<br><small>放入旅行照片</small></div></div>
       <div class="travel-photo-card"><div class="travel-photo-placeholder">2024<br><small>放入旅行照片</small></div></div>
@@ -70,8 +67,8 @@ author: "Name Name"
   </section>
 
   <section class="travel-memory">
-    <h3>2026 · 待补充地点</h3>
-    <p>研究生生活里的旅行，也继续记录在这里。</p>
+    <h3>2026 · 西藏</h3>
+    <p>东躲西藏</p>
     <div class="travel-photo-stack" aria-label="2026年旅行照片">
       <div class="travel-photo-card"><div class="travel-photo-placeholder">2026<br><small>放入旅行照片</small></div></div>
       <div class="travel-photo-card"><div class="travel-photo-placeholder">2026<br><small>放入旅行照片</small></div></div>
