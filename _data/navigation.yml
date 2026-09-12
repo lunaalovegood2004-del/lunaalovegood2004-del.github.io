@@ -4,8 +4,17 @@ main:
   - title: "About"
     url: /
 
+  - title: "学习 / 实践"
+    url: /learning/
+
   - title: "Projects"
     url: /portfolio/
+
+  - title: "旅行游记"
+    url: /travel/
+
+  - title: "我的生活"
+    url: /life/
 
   - title: "CV"
     url: /cv/
