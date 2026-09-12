@@ -26,14 +26,14 @@ author: "Name Name"
 
 <div class="life-photo-deck" aria-label="我的冰淇淋照片集">
   <div class="life-photo-stack" id="life-photo-stack">
-    <div class="life-photo-card"><img src="{{ '/images/IMG_0055.HEIC' | relative_url }}" alt="我最爱的冰淇淋 1"></div>
-    <div class="life-photo-card"><img src="{{ '/images/IMG_0118.HEIC' | relative_url }}" alt="我最爱的冰淇淋 2"></div>
-    <div class="life-photo-card"><img src="{{ '/images/IMG_0208.HEIC' | relative_url }}" alt="我最爱的冰淇淋 3"></div>
-    <div class="life-photo-card"><img src="{{ '/images/IMG_0362.HEIC' | relative_url }}" alt="我最爱的冰淇淋 4"></div>
-    <div class="life-photo-card"><img src="{{ '/images/IMG_0452.HEIC' | relative_url }}" alt="我最爱的冰淇淋 5"></div>
-    <div class="life-photo-card"><img src="{{ '/images/IMG_0672.HEIC' | relative_url }}" alt="我最爱的冰淇淋 6"></div>
-    <div class="life-photo-card"><img src="{{ '/images/IMG_0836.HEIC' | relative_url }}" alt="我最爱的冰淇淋 7"></div>
-    <div class="life-photo-card"><img src="{{ '/images/IMG_0974.HEIC' | relative_url }}" alt="我最爱的冰淇淋 8"></div>
+    <div class="life-photo-card photo-1" role="img" aria-label="我最爱的冰淇淋 1"></div>
+    <div class="life-photo-card photo-2" role="img" aria-label="我最爱的冰淇淋 2"></div>
+    <div class="life-photo-card photo-3" role="img" aria-label="我最爱的冰淇淋 3"></div>
+    <div class="life-photo-card photo-4" role="img" aria-label="我最爱的冰淇淋 4"></div>
+    <div class="life-photo-card photo-5" role="img" aria-label="我最爱的冰淇淋 5"></div>
+    <div class="life-photo-card photo-6" role="img" aria-label="我最爱的冰淇淋 6"></div>
+    <div class="life-photo-card photo-7" role="img" aria-label="我最爱的冰淇淋 7"></div>
+    <div class="life-photo-card photo-8" role="img" aria-label="我最爱的冰淇淋 8"></div>
   </div>
   <p class="life-photo-hint">悬停在照片上，慢慢翻一翻。</p>
 </div>
@@ -41,9 +41,15 @@ author: "Name Name"
 <style>
 .life-photo-deck { margin: 2.5rem 0 3rem; text-align: center; }
 .life-photo-stack { position: relative; width: min(100%, 430px); height: 520px; margin: 0 auto; perspective: 1000px; }
-.life-photo-card { position: absolute; left: 50%; top: 50%; width: min(78%, 330px); aspect-ratio: 3 / 4; padding: 10px 10px 34px; background: #fff; border: 1px solid rgba(0,0,0,.12); box-shadow: 0 10px 28px rgba(0,0,0,.13); transform-origin: 50% 90%; transform: translate(-50%, -50%) rotate(var(--rotation, 0deg)); transition: transform .45s ease, box-shadow .45s ease, opacity .45s ease; cursor: pointer; overflow: hidden; }
-.life-photo-card img { display: block; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity .25s ease; }
-.life-photo-card img.is-ready { opacity: 1; }
+.life-photo-card { position: absolute; left: 50%; top: 50%; width: min(78%, 330px); aspect-ratio: 3 / 4; padding: 10px 10px 34px; background-color: #fff; background-image: url("{{ '/images/ice-cream-sprite.jpg' | relative_url }}"); background-repeat: no-repeat; background-size: 800% 100%; border: 1px solid rgba(0,0,0,.12); box-shadow: 0 10px 28px rgba(0,0,0,.13); transform-origin: 50% 90%; transform: translate(-50%, -50%) rotate(var(--rotation, 0deg)); transition: transform .45s ease, box-shadow .45s ease, opacity .45s ease; cursor: pointer; overflow: hidden; }
+.photo-1 { background-position: 0% center; }
+.photo-2 { background-position: 14.2857% center; }
+.photo-3 { background-position: 28.5714% center; }
+.photo-4 { background-position: 42.8571% center; }
+.photo-5 { background-position: 57.1429% center; }
+.photo-6 { background-position: 71.4286% center; }
+.photo-7 { background-position: 85.7143% center; }
+.photo-8 { background-position: 100% center; }
 .life-photo-stack:hover .life-photo-card { box-shadow: 0 16px 34px rgba(0,0,0,.17); }
 .life-photo-card.is-moving { transform: translate(28%, -60%) rotate(9deg) !important; opacity: .98; z-index: 20 !important; }
 .life-photo-hint { margin: .75rem 0 0; font-size: .85rem; opacity: .65; }
@@ -51,29 +57,10 @@ author: "Name Name"
 @media (prefers-reduced-motion: reduce) { .life-photo-card { transition: none; } }
 </style>
 
-<script src="https://cdn.jsdelivr.net/npm/heic2any@0.0.4/dist/heic2any.min.js"></script>
 <script>
 (function () {
   var stack = document.getElementById('life-photo-stack');
   if (!stack) return;
-
-  var images = stack.querySelectorAll('img');
-  images.forEach(function (img) {
-    fetch(img.src)
-      .then(function (response) { return response.blob(); })
-      .then(function (blob) {
-        return heic2any({ blob: blob, toType: 'image/jpeg', quality: 0.88 });
-      })
-      .then(function (result) {
-        var converted = Array.isArray(result) ? result[0] : result;
-        img.src = URL.createObjectURL(converted);
-        img.classList.add('is-ready');
-      })
-      .catch(function () {
-        img.style.opacity = '1';
-      });
-  });
-
   var timer = null;
   var moving = false;
   function flipPhoto() {
