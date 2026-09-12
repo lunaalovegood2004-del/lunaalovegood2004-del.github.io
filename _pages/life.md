@@ -3,6 +3,7 @@ layout: archive
 title: "我的生活"
 permalink: /life/
 author_profile: true
+author: "Name Name"
 ---
 
 研究生生活并不只有课程、论文和实习。
@@ -36,36 +37,9 @@ author_profile: true
 </div>
 
 <style>
-.life-photo-deck {
-  margin: 2.5rem 0 3rem;
-  text-align: center;
-}
-
-.life-photo-stack {
-  position: relative;
-  width: min(100%, 430px);
-  height: 520px;
-  margin: 0 auto;
-  perspective: 1000px;
-}
-
-.life-photo-card {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: min(78%, 330px);
-  aspect-ratio: 3 / 4;
-  padding: 10px 10px 34px;
-  background: #fff;
-  border: 1px solid rgba(0,0,0,.12);
-  box-shadow: 0 10px 28px rgba(0,0,0,.13);
-  transform-origin: 50% 90%;
-  transform: translate(-50%, -50%) rotate(var(--rotation, 0deg));
-  transition: transform .45s ease, box-shadow .45s ease, opacity .45s ease;
-  cursor: pointer;
-  overflow: hidden;
-}
-
+.life-photo-deck { margin: 2.5rem 0 3rem; text-align: center; }
+.life-photo-stack { position: relative; width: min(100%, 430px); height: 520px; margin: 0 auto; perspective: 1000px; }
+.life-photo-card { position: absolute; left: 50%; top: 50%; width: min(78%, 330px); aspect-ratio: 3 / 4; padding: 10px 10px 34px; background: #fff; border: 1px solid rgba(0,0,0,.12); box-shadow: 0 10px 28px rgba(0,0,0,.13); transform-origin: 50% 90%; transform: translate(-50%, -50%) rotate(var(--rotation, 0deg)); transition: transform .45s ease, box-shadow .45s ease, opacity .45s ease; cursor: pointer; overflow: hidden; }
 .life-photo-card:nth-child(1) { --rotation: -5deg; z-index: 8; }
 .life-photo-card:nth-child(2) { --rotation: 3deg; z-index: 7; }
 .life-photo-card:nth-child(3) { --rotation: -2deg; z-index: 6; }
@@ -74,80 +48,30 @@ author_profile: true
 .life-photo-card:nth-child(6) { --rotation: 4deg; z-index: 3; }
 .life-photo-card:nth-child(7) { --rotation: -3deg; z-index: 2; }
 .life-photo-card:nth-child(8) { --rotation: 7deg; z-index: 1; }
-
-.life-photo-card img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.life-photo-stack:hover .life-photo-card {
-  box-shadow: 0 16px 34px rgba(0,0,0,.17);
-}
-
-.life-photo-card.is-moving {
-  transform: translate(28%, -60%) rotate(9deg) !important;
-  opacity: .98;
-  z-index: 20 !important;
-}
-
-.life-photo-hint {
-  margin: .75rem 0 0;
-  font-size: .85rem;
-  opacity: .65;
-}
-
-@media (max-width: 600px) {
-  .life-photo-stack {
-    height: 440px;
-  }
-
-  .life-photo-card {
-    width: min(82%, 300px);
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .life-photo-card {
-    transition: none;
-  }
-}
+.life-photo-card img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.life-photo-stack:hover .life-photo-card { box-shadow: 0 16px 34px rgba(0,0,0,.17); }
+.life-photo-card.is-moving { transform: translate(28%, -60%) rotate(9deg) !important; opacity: .98; z-index: 20 !important; }
+.life-photo-hint { margin: .75rem 0 0; font-size: .85rem; opacity: .65; }
+@media (max-width: 600px) { .life-photo-stack { height: 440px; } .life-photo-card { width: min(82%, 300px); } }
+@media (prefers-reduced-motion: reduce) { .life-photo-card { transition: none; } }
 </style>
 
 <script>
 (function () {
   var stack = document.getElementById('life-photo-stack');
   if (!stack) return;
-
   var timer = null;
   var moving = false;
-
   function flipPhoto() {
     if (moving || !stack.matches(':hover')) return;
-
     var first = stack.firstElementChild;
     if (!first) return;
-
     moving = true;
     first.classList.add('is-moving');
-
-    setTimeout(function () {
-      first.classList.remove('is-moving');
-      stack.appendChild(first);
-      moving = false;
-    }, 450);
+    setTimeout(function () { first.classList.remove('is-moving'); stack.appendChild(first); moving = false; }, 450);
   }
-
-  stack.addEventListener('mouseenter', function () {
-    if (timer) return;
-    timer = setInterval(flipPhoto, 900);
-  });
-
-  stack.addEventListener('mouseleave', function () {
-    clearInterval(timer);
-    timer = null;
-  });
+  stack.addEventListener('mouseenter', function () { if (timer) return; timer = setInterval(flipPhoto, 900); });
+  stack.addEventListener('mouseleave', function () { clearInterval(timer); timer = null; });
 })();
 </script>
 
