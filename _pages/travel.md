@@ -34,7 +34,7 @@ author: "Name Name"
 
   <section class="travel-memory">
     <h3>2026 · 西北</h3><p>到祖国的西边去</p>
-    <div class="travel-photo-stack" aria-label="2026年大西北旅行照片"><div class="travel-photo-card"><img src="{{ '/images/IMG_1908大西北.jpeg' | relative_url }}" alt="2026年大西北旅行照片 1"></div><div class="travel-photo-card"><img src="{{ '/images/IMG_1968大西北.jpeg' | relative_url }}" alt="2026年大西北旅行照片 2"></div><div class="travel-photo-card"><img src="{{ '/images/IMG_2017大西北.jpeg' | relative_url }}" alt="2026年大西北旅行照片 3"></div><div class="travel-photo-card"><img src="{{ '/images/IMG_2031大西北.jpeg' | relative_url }}" alt="2026年大西北旅行照片 4"></div></div>
+    <div class="travel-photo-stack" aria-label="2026年大西北旅行照片"><div class="travel-photo-card"><img src="{{ '/images/IMG_1908大西北.jpeg' | relative_url }}" alt="2026年大西北旅行照片 1"></div><div class="travel-photo-card"><img src="{{ '/images/IMG_1968大西北.jpeg' | relative_url }}" alt="2026年大西北旅行照片 2"></div><div class="travel-photo-card"><img src="{{ '/images/IMG_2017大西北.jpeg' | relative_url }}" alt="2026年大西北旅行照片 3"></div><div class="travel-photo-card"><img src="{{ '/images/IMG_2031大西北.jpeg' | relative_url }}" alt="2026年大西北旅行照片 4"></div><div class="travel-photo-card"><img src="{{ '/images/IMG_7257大西北.jpeg' | relative_url }}" alt="2026年大西北旅行照片 5"></div><div class="travel-photo-card"><img src="{{ '/images/IMG_7451大西北.jpeg' | relative_url }}" alt="2026年大西北旅行照片 6"></div></div>
   </section>
 
   <section class="travel-memory">
@@ -54,10 +54,12 @@ author: "Name Name"
 .travel-photo-card img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; image-rendering: auto; }
 .travel-photo-placeholder { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center; background: #f4f4f1; color: #777; font-size: 1.05rem; line-height: 1.7; }
 .travel-photo-placeholder small { font-size: .78rem; opacity: .7; }
-.travel-photo-card:nth-child(1) { transform: translate(-50%, -50%) rotate(-3deg); z-index: 4; }
-.travel-photo-card:nth-child(2) { transform: translate(-50%, -50%) rotate(2deg); z-index: 3; }
-.travel-photo-card:nth-child(3) { transform: translate(-50%, -50%) rotate(-2deg); z-index: 2; }
-.travel-photo-card:nth-child(4) { transform: translate(-50%, -50%) rotate(4deg); z-index: 1; }
+.travel-photo-card:nth-child(1) { transform: translate(-50%, -50%) rotate(-3deg); z-index: 6; }
+.travel-photo-card:nth-child(2) { transform: translate(-50%, -50%) rotate(2deg); z-index: 5; }
+.travel-photo-card:nth-child(3) { transform: translate(-50%, -50%) rotate(-2deg); z-index: 4; }
+.travel-photo-card:nth-child(4) { transform: translate(-50%, -50%) rotate(4deg); z-index: 3; }
+.travel-photo-card:nth-child(5) { transform: translate(-50%, -50%) rotate(-4deg); z-index: 2; }
+.travel-photo-card:nth-child(6) { transform: translate(-50%, -50%) rotate(2deg); z-index: 1; }
 .travel-photo-stack:hover .travel-photo-card { box-shadow: 0 16px 34px rgba(0,0,0,.17); }
 .travel-photo-card.is-moving { transform: translate(28%, -60%) rotate(9deg) !important; opacity: .98; z-index: 20 !important; }
 @media (max-width: 600px) { .travel-photo-stack { height: 350px; } .travel-photo-card { width: min(82vw, 300px); height: 290px; } }
