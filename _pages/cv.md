@@ -40,3 +40,5 @@ Interests
 ======
 
 散步，做手工，晒太阳，吃冰激凌
+
+<!-- sidebar author profile -->
