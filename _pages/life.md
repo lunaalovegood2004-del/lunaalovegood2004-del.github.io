@@ -19,7 +19,7 @@ author_profile: true
 
 ## 照片
 
-这一组照片先做成一个小小的“照片叠”，而不是把照片一张张竖着排下来。把鼠标放到照片上，会看到照片像一沓实体照片一样依次翻动。
+这一组照片先做成一个小小的“照片叠”，而不是把照片一张张竖着排下来。把鼠标放到照片上，最上面的一张会滑到后面，下一张自然露出来，像翻一沓真实的照片。
 
 <div class="life-photo-deck" aria-label="生活照片集">
   <div class="life-photo-stack" id="life-photo-stack">
@@ -61,7 +61,7 @@ author_profile: true
   box-shadow: 0 10px 28px rgba(0,0,0,.13);
   transform-origin: 50% 90%;
   transform: translate(-50%, -50%) rotate(var(--rotation, 0deg));
-  transition: transform .45s ease, box-shadow .45s ease;
+  transition: transform .45s ease, box-shadow .45s ease, opacity .45s ease;
   cursor: pointer;
   overflow: hidden;
 }
@@ -86,47 +86,10 @@ author_profile: true
   box-shadow: 0 16px 34px rgba(0,0,0,.17);
 }
 
-.life-photo-stack:hover .life-photo-card:nth-child(1) {
-  animation: life-photo-front 1.1s ease forwards;
-}
-
-.life-photo-stack:hover .life-photo-card:nth-child(2) {
-  animation: life-photo-next 1.1s ease .08s forwards;
-}
-
-.life-photo-stack:hover .life-photo-card:nth-child(3) {
-  animation: life-photo-next 1.1s ease .16s forwards;
-}
-
-.life-photo-stack:hover .life-photo-card:nth-child(4) {
-  animation: life-photo-next 1.1s ease .24s forwards;
-}
-
-.life-photo-stack:hover .life-photo-card:nth-child(5) {
-  animation: life-photo-next 1.1s ease .32s forwards;
-}
-
-.life-photo-stack:hover .life-photo-card:nth-child(6) {
-  animation: life-photo-next 1.1s ease .40s forwards;
-}
-
-.life-photo-stack:hover .life-photo-card:nth-child(7) {
-  animation: life-photo-next 1.1s ease .48s forwards;
-}
-
-.life-photo-stack:hover .life-photo-card:nth-child(8) {
-  animation: life-photo-next 1.1s ease .56s forwards;
-}
-
-@keyframes life-photo-front {
-  0% { transform: translate(-50%, -50%) rotate(-5deg); }
-  45% { transform: translate(25%, -58%) rotate(9deg); }
-  100% { transform: translate(-50%, -50%) rotate(-5deg); z-index: 0; }
-}
-
-@keyframes life-photo-next {
-  0% { transform: translate(-50%, -50%) rotate(var(--rotation)); }
-  100% { transform: translate(-50%, -50%) rotate(var(--rotation)); }
+.life-photo-card.is-moving {
+  transform: translate(28%, -60%) rotate(9deg) !important;
+  opacity: .98;
+  z-index: 20 !important;
 }
 
 .life-photo-hint {
@@ -149,12 +112,44 @@ author_profile: true
   .life-photo-card {
     transition: none;
   }
-
-  .life-photo-stack:hover .life-photo-card {
-    animation: none !important;
-  }
 }
 </style>
+
+<script>
+(function () {
+  var stack = document.getElementById('life-photo-stack');
+  if (!stack) return;
+
+  var timer = null;
+  var moving = false;
+
+  function flipPhoto() {
+    if (moving || !stack.matches(':hover')) return;
+
+    var first = stack.firstElementChild;
+    if (!first) return;
+
+    moving = true;
+    first.classList.add('is-moving');
+
+    setTimeout(function () {
+      first.classList.remove('is-moving');
+      stack.appendChild(first);
+      moving = false;
+    }, 450);
+  }
+
+  stack.addEventListener('mouseenter', function () {
+    if (timer) return;
+    timer = setInterval(flipPhoto, 900);
+  });
+
+  stack.addEventListener('mouseleave', function () {
+    clearInterval(timer);
+    timer = null;
+  });
+})();
+</script>
 
 ## 最近的生活
 
