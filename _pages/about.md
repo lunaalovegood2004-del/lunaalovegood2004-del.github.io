@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "刘长羽 | Communication · Digital Marketing · AI"
+title: "刘长羽 | Communication · Digital Marketing "
 author: "Name Name"
 author_profile: true
 redirect_from:
@@ -8,11 +8,11 @@ redirect_from:
   - /about.html
 ---
 
-# 你好，我是刘长羽 👋
+你好，我是刘长羽 
 
-**新闻与传播硕士 · Digital Marketing · AI**
+新闻与传播硕士 · Digital Marketing 
 
-我是一名新闻与传播专业硕士研究生，本科就读于**广告学**，目前研究方向为**数字营销**。
+我是一名新闻与传播专业硕士研究生，本科就读于上海师范大学广告学，目前研究方向为新闻与传播中的数字营销。
 
 我关注 **Digital Marketing、Social Media、Content Strategy 以及 AI 在传播与营销中的应用**，希望把传播学的研究能力与真实的营销实践结合起来。
 
@@ -20,7 +20,7 @@ redirect_from:
 
 ---
 
-## 🧩 Skills
+ 🧩 Skills
 
 **Digital Marketing**  
 数字营销策略 · 社交媒体营销 · 用户与受众分析 · 品牌传播
@@ -36,7 +36,7 @@ AI 辅助内容创作 · AI 工具应用 · AI × Marketing · 信息检索与�
 
 ---
 
-## 💼 Experience
+ 💼 Experience
 
 ### 品牌 PR 实习
 **上海千织护理有限公司**
@@ -50,9 +50,9 @@ AI 辅助内容创作 · AI 工具应用 · AI × Marketing · 信息检索与�
 
 ---
 
-## 📁 Selected Projects
+ 📁 Selected Projects
 
-### Digital Marketing
+ Digital Marketing
 
 围绕品牌、消费者与数字平台开展营销研究和实践，关注如何通过内容、社交媒体与数字渠道建立品牌与用户之间的连接。
 
@@ -76,15 +76,7 @@ AI 辅助内容创作 · AI 工具应用 · AI × Marketing · 信息检索与�
 
 ---
 
-## 🚀 What I'm Building
 
-研究生阶段，我希望重点提升三项核心能力：
-
-**数字营销能力 + AI 应用能力 + 内容创作能力**
-
-我希望通过真实项目和作品持续验证这些能力，并逐步建立一个属于自己的 **Digital Marketing × AI Portfolio**。
-
----
 
 ## 📮 Contact
 
