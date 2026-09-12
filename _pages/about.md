@@ -20,67 +20,62 @@ redirect_from:
 
 ---
 
- 🧩 Skills
+🧩 Skills
 
-**Digital Marketing**  
-数字营销策略 · 社交媒体营销 · 用户与受众分析 · 品牌传播
+<div class="skills-grid">
+  <div class="skill-card">
+    <h4>Digital Marketing</h4>
+    <p>数字营销策略 · 社交媒体营销 · 用户与受众分析 · 品牌传播</p>
+  </div>
 
-**Content & Social Media**  
-内容策划 · 社媒内容创作 · Campaign 策划 · 新媒体运营
+  <div class="skill-card">
+    <h4>Content & Social Media</h4>
+    <p>内容策划 · 社媒内容创作 · Campaign 策划 · 新媒体运营</p>
+  </div>
 
-**AI & Communication**  
-AI 辅助内容创作 · AI 工具应用 · AI × Marketing · 信息检索与研究
+  <div class="skill-card">
+    <h4>AI & Communication</h4>
+    <p>AI 辅助内容创作 · AI 工具应用 · AI × Marketing · 信息检索与研究</p>
+  </div>
 
-**Research**  
-传播研究 · 文献分析 · 用户研究 · 数据追踪与效果分析
+  <div class="skill-card">
+    <h4>Research</h4>
+    <p>传播研究 · 文献分析 · 用户研究 · 数据追踪与效果分析</p>
+  </div>
+</div>
 
----
+<style>
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.2rem;
+  margin: 1.5rem 0 2.5rem;
+}
 
- 💼 Experience
+.skill-card {
+  background: #f0f7f9;          /* 浅青绿色背景 */
+  border-radius: 14px;          /* 圆角矩形 */
+  padding: 1.3rem 1.4rem;
+  border: 1px solid #e0eef2;
+  transition: all 0.25s ease;
+}
 
-### 品牌 PR 实习
-**上海千织护理有限公司**
+.skill-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(47, 127, 147, 0.12);
+  background: #e8f4f7;
+}
 
-负责博主 Seeding、数据追踪与传播效果优化，参与品牌社交媒体传播相关工作。
+.skill-card h4 {
+  margin: 0 0 0.6rem 0;
+  font-size: 1.05rem;
+  color: #2f7f93;
+}
 
-### 内容策划实习
-**上海凯鹏广告公司**
-
-参与**新日电动车、黛珂**等品牌的社媒内容策划，积累品牌内容与社交媒体营销实践经验。
-
----
-
- 📁 Selected Projects
-
- Digital Marketing
-
-围绕品牌、消费者与数字平台开展营销研究和实践，关注如何通过内容、社交媒体与数字渠道建立品牌与用户之间的连接。
-
-### AI × Digital Marketing
-
-探索 AI 在内容策划、用户洞察、营销研究与传播策略中的应用，尝试建立更高效的 AI-assisted marketing workflow。
-
-### Communication & New Media
-
-围绕广告、新媒体、数字传播等主题完成课程研究与实践项目，并将研究成果逐步转化为可展示的作品。
-
----
-
-## 🎓 Education
-
-**南京大学**  
-新闻与传播硕士｜数字营销方向｜预计 2029 年毕业
-
-**上海师范大学**  
-广告学文学学士｜2026 年毕业
-
----
-
-
-
-## 📮 Contact
-
-欢迎通过 Email 或 GitHub 与我联系。
-
-**Email:** 13525991276@163.com  
-**GitHub:** [lunaalovegood2004-del](https://github.com/lunaalovegood2004-del)
+.skill-card p {
+  margin: 0;
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: #555;
+}
+</style>
