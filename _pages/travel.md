@@ -25,3 +25,5 @@ author: "Name Name"
 - 喜欢的街道、建筑与风景
 - 当地的食物与日常生活
 - 那些值得重新翻看的照片
+
+<!-- sidebar author profile -->
