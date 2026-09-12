@@ -18,20 +18,22 @@ author: "Name Name"
 
 我希望把自己真正喜欢的事情记录下来，而不是为了让个人网站看起来“丰富”而堆砌内容。
 
-## 照片
+## 冰淇淋大赏
 
-这一组照片先做成一个小小的“照片叠”，而不是把照片一张张竖着排下来。把鼠标放到照片上，最上面的一张会滑到后面，下一张自然露出来，像翻一沓真实的照片。
+我很喜欢吃冰淇淋，所以决定把这里留给我的冰淇淋收藏。每一张照片，都是我吃过、喜欢过的一种味道。
 
-<div class="life-photo-deck" aria-label="生活照片集">
+这一组照片先做成一个小小的“冰淇淋大赏”，而不是把照片一张张竖着排下来。把鼠标放到照片上，最上面的一张会滑到后面，下一张自然露出来，像翻一沓真实的照片。
+
+<div class="life-photo-deck" aria-label="我的冰淇淋照片集">
   <div class="life-photo-stack" id="life-photo-stack">
-    <div class="life-photo-card"><img src="{{ '/images/IMG_0055.HEIC' | relative_url }}" alt="生活照片 1"></div>
-    <div class="life-photo-card"><img src="{{ '/images/IMG_0118.HEIC' | relative_url }}" alt="生活照片 2"></div>
-    <div class="life-photo-card"><img src="{{ '/images/IMG_0208.HEIC' | relative_url }}" alt="生活照片 3"></div>
-    <div class="life-photo-card"><img src="{{ '/images/IMG_0362.HEIC' | relative_url }}" alt="生活照片 4"></div>
-    <div class="life-photo-card"><img src="{{ '/images/IMG_0452.HEIC' | relative_url }}" alt="生活照片 5"></div>
-    <div class="life-photo-card"><img src="{{ '/images/IMG_0672.HEIC' | relative_url }}" alt="生活照片 6"></div>
-    <div class="life-photo-card"><img src="{{ '/images/IMG_0836.HEIC' | relative_url }}" alt="生活照片 7"></div>
-    <div class="life-photo-card"><img src="{{ '/images/IMG_0974.HEIC' | relative_url }}" alt="生活照片 8"></div>
+    <div class="life-photo-card"><img src="{{ '/images/IMG_0055.HEIC' | relative_url }}" alt="我最爱的冰淇淋 1"></div>
+    <div class="life-photo-card"><img src="{{ '/images/IMG_0118.HEIC' | relative_url }}" alt="我最爱的冰淇淋 2"></div>
+    <div class="life-photo-card"><img src="{{ '/images/IMG_0208.HEIC' | relative_url }}" alt="我最爱的冰淇淋 3"></div>
+    <div class="life-photo-card"><img src="{{ '/images/IMG_0362.HEIC' | relative_url }}" alt="我最爱的冰淇淋 4"></div>
+    <div class="life-photo-card"><img src="{{ '/images/IMG_0452.HEIC' | relative_url }}" alt="我最爱的冰淇淋 5"></div>
+    <div class="life-photo-card"><img src="{{ '/images/IMG_0672.HEIC' | relative_url }}" alt="我最爱的冰淇淋 6"></div>
+    <div class="life-photo-card"><img src="{{ '/images/IMG_0836.HEIC' | relative_url }}" alt="我最爱的冰淇淋 7"></div>
+    <div class="life-photo-card"><img src="{{ '/images/IMG_0974.HEIC' | relative_url }}" alt="我最爱的冰淇淋 8"></div>
   </div>
   <p class="life-photo-hint">悬停在照片上，慢慢翻一翻。</p>
 </div>
