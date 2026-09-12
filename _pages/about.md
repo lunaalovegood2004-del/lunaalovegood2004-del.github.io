@@ -1,6 +1,7 @@
 ---
 permalink: /
 title: "刘长羽 | Communication · Digital Marketing · AI"
+author: "Name Name"
 author_profile: true
 redirect_from:
   - /about/
