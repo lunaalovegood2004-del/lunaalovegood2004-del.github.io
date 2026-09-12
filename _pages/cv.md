@@ -29,12 +29,13 @@ Experience
 Skills
 ======
 
-* **Digital Marketing:** 社交媒体营销、品牌传播、内容营销、用户与受众分析
-* **Content:** 内容策划、社媒内容创作、Campaign 策划、新媒体运营
-* **AI:** AI 辅助内容创作、AI 工具应用、AI × Marketing
-* **Research:** 传播研究、文献分析、用户研究、数据追踪与效果分析
+Figma
+Office办公软件
+Canvas
+剪映
+
 
 Interests
 ======
 
-Digital Marketing · Social Media · Content Strategy · AI & Communication · Consumer Behavior
+散步，做手工，晒太阳，吃冰激凌
