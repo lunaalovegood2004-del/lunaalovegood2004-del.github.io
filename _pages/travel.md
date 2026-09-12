@@ -3,6 +3,7 @@ layout: archive
 title: "旅行游记"
 permalink: /travel/
 author_profile: true
+author: "Name Name"
 ---
 
 旅行对我来说，不只是抵达一个地方，也是在不同的城市和风景里留下自己的生活记录。
