@@ -3,6 +3,7 @@ layout: archive
 title: "Projects"
 permalink: /projects/
 author_profile: true
+author: "Name Name"
 ---
 
 这里记录我在研究生阶段完成的课程作业、实践项目以及一些正在慢慢完善的个人项目。
