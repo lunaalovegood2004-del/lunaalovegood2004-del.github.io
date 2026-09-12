@@ -15,7 +15,7 @@ repository               : "lunaalovegood2004-del/lunaalovegood2004-del.github.i
 
 # Site Author
 author:
-  avatar           : "/images/B27A0067(1寸电子版).PNG"
+  avatar           : "https://lunaalovegood2004-del.github.io/images/B27A0067(1%E5%AF%B8%E7%94%B5%E5%AD%90%E7%89%88).PNG"
   name             : "刘长羽"
   pronouns         :
   bio              : "新闻与传播硕士在读｜数字营销 × AI"
@@ -97,7 +97,7 @@ comments:
   facebook:
     appid                :
     num_posts            :
-    colorscheme:
+    colorscheme          :
 staticman:
   allowedFields          : ['name', 'email', 'url', 'message']
   branch                 : "gh-pages"
@@ -131,8 +131,8 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 :
-og_description           :
+og_image:
+og_description:
 social:
   type                   : "Person"
   name                   : "刘长羽"
@@ -158,6 +158,9 @@ exclude:
   - .github
   - .jekyll-assets-cache
   - .sass-cache
+  - assets/js/_main.js
+  - assets/js/plugins
+  - assets/js/vendor
   - CHANGELOG
   - Capfile
   - config
