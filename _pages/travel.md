@@ -63,10 +63,8 @@ author: "Name Name"
     <div class="travel-photo-stack" aria-label="2026年大西北旅行照片">
       <div class="travel-photo-card"><img src="{{ '/images/IMG_1908大西北.jpeg' | relative_url }}" alt="2026年大西北旅行照片 1"></div>
       <div class="travel-photo-card"><img src="{{ '/images/IMG_1968大西北.jpeg' | relative_url }}" alt="2026年大西北旅行照片 2"></div>
-      <div class="travel-photo-card"><img src="{{ '/images/IMG_2017大西北.jpeg' | relative_url }}" alt="2026年大西北旅行照片 3"></div>
-      <div class="travel-photo-card"><img src="{{ '/images/IMG_2031大西北.jpeg' | relative_url }}" alt="2026年大西北旅行照片 4"></div>
-      <div class="travel-photo-card"><img src="{{ '/images/IMG_7257大西北.jpeg' | relative_url }}" alt="2026年大西北旅行照片 5"></div>
-      <div class="travel-photo-card"><img src="{{ '/images/IMG_7451大西北.jpeg' | relative_url }}" alt="2026年大西北旅行照片 6"></div>
+      <div class="travel-photo-card"><img src="{{ '/images/IMG_7257大西北.jpeg' | relative_url }}" alt="2026年大西北旅行照片 3"></div>
+      <div class="travel-photo-card"><img src="{{ '/images/IMG_7451大西北.jpeg' | relative_url }}" alt="2026年大西北旅行照片 4"></div>
     </div>
     <p class="travel-photo-hint">悬停在照片上，慢慢翻一翻。</p>
   </section>
