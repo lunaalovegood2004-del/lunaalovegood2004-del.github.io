@@ -40,15 +40,8 @@ author: "Name Name"
 .life-photo-deck { margin: 2.5rem 0 3rem; text-align: center; }
 .life-photo-stack { position: relative; width: min(100%, 430px); height: 520px; margin: 0 auto; perspective: 1000px; }
 .life-photo-card { position: absolute; left: 50%; top: 50%; width: min(78%, 330px); aspect-ratio: 3 / 4; padding: 10px 10px 34px; background: #fff; border: 1px solid rgba(0,0,0,.12); box-shadow: 0 10px 28px rgba(0,0,0,.13); transform-origin: 50% 90%; transform: translate(-50%, -50%) rotate(var(--rotation, 0deg)); transition: transform .45s ease, box-shadow .45s ease, opacity .45s ease; cursor: pointer; overflow: hidden; }
-.life-photo-card:nth-child(1) { --rotation: -5deg; z-index: 8; }
-.life-photo-card:nth-child(2) { --rotation: 3deg; z-index: 7; }
-.life-photo-card:nth-child(3) { --rotation: -2deg; z-index: 6; }
-.life-photo-card:nth-child(4) { --rotation: 6deg; z-index: 5; }
-.life-photo-card:nth-child(5) { --rotation: -7deg; z-index: 4; }
-.life-photo-card:nth-child(6) { --rotation: 4deg; z-index: 3; }
-.life-photo-card:nth-child(7) { --rotation: -3deg; z-index: 2; }
-.life-photo-card:nth-child(8) { --rotation: 7deg; z-index: 1; }
-.life-photo-card img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.life-photo-card img { display: block; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity .25s ease; }
+.life-photo-card img.is-ready { opacity: 1; }
 .life-photo-stack:hover .life-photo-card { box-shadow: 0 16px 34px rgba(0,0,0,.17); }
 .life-photo-card.is-moving { transform: translate(28%, -60%) rotate(9deg) !important; opacity: .98; z-index: 20 !important; }
 .life-photo-hint { margin: .75rem 0 0; font-size: .85rem; opacity: .65; }
@@ -56,10 +49,29 @@ author: "Name Name"
 @media (prefers-reduced-motion: reduce) { .life-photo-card { transition: none; } }
 </style>
 
+<script src="https://cdn.jsdelivr.net/npm/heic2any@0.0.4/dist/heic2any.min.js"></script>
 <script>
 (function () {
   var stack = document.getElementById('life-photo-stack');
   if (!stack) return;
+
+  var images = stack.querySelectorAll('img');
+  images.forEach(function (img) {
+    fetch(img.src)
+      .then(function (response) { return response.blob(); })
+      .then(function (blob) {
+        return heic2any({ blob: blob, toType: 'image/jpeg', quality: 0.88 });
+      })
+      .then(function (result) {
+        var converted = Array.isArray(result) ? result[0] : result;
+        img.src = URL.createObjectURL(converted);
+        img.classList.add('is-ready');
+      })
+      .catch(function () {
+        img.style.opacity = '1';
+      });
+  });
+
   var timer = null;
   var moving = false;
   function flipPhoto() {
