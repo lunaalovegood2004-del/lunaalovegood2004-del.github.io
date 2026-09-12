@@ -3,6 +3,7 @@ layout: archive
 title: "学习 / 实践"
 permalink: /learning/
 author_profile: true
+author: "Name Name"
 ---
 
 ## 新闻与传播
