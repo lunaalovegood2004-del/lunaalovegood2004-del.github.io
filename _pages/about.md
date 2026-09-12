@@ -25,12 +25,12 @@ redirect_from:
 <div class="skills-grid">
   <div class="skill-card">
     <h4>Digital Marketing</h4>
-    <p>数字营销策略 · 社交媒体营销 · 用户与受众分析 · 品牌传播</p>
+    <p>文案策划 · 整合营销方案设计 · 社交媒体运营 · 数据分析与复盘</p>
   </div>
 
   <div class="skill-card">
     <h4>Content & Social Media</h4>
-    <p>内容策划 · 社媒内容创作 · Campaign 策划 · 新媒体运营</p>
+    <p>雅思7.0 · 法语四级 · 大学英语6级</p>
   </div>
 
   <div class="skill-card">
@@ -40,7 +40,7 @@ redirect_from:
 
   <div class="skill-card">
     <h4>Research</h4>
-    <p>传播研究 · 文献分析 · 用户研究 · 数据追踪与效果分析</p>
+    <p>Office办公软件 · figma · 剪映 </p>
   </div>
 </div>
 
