@@ -15,7 +15,7 @@ repository               : "lunaalovegood2004-del/lunaalovegood2004-del.github.i
 
 # Site Author
 author:
-  avatar           : "https://lunaalovegood2004-del.github.io/images/B27A0067(1%E5%AF%B8%E7%94%B5%E5%AD%90%E7%89%88).PNG"
+  avatar           : "https://raw.githubusercontent.com/lunaalovegood2004-del/lunaalovegood2004-del.github.io/master/images/B27A0067%281%E5%AF%B8%E7%94%B5%E5%AD%90%E7%89%88%29.PNG"
   name             : "刘长羽"
   pronouns         :
   bio              : "新闻与传播硕士在读｜数字营销 × AI"
@@ -29,7 +29,7 @@ author:
   arxiv            :
   googlescholar    :
   inspire-hep      :
-  impactstory      :
+  impactstory     :
   orcid            :
   semantic         :
   ssrn             :
@@ -49,8 +49,8 @@ author:
   # Social media
   artstation       :
   bluesky          :
-  facebook         :
-  flickr           :
+  facebook        :
+  flickr          :
   foursquare       :
   goodreads        :
   google_plus      :
@@ -121,7 +121,7 @@ atom_feed:
 # SEO Related
 google_site_verification :
 bing_site_verification   :
-alexa_site_verification  :
+alexa_site_verification :
 yandex_site_verification :
 
 # Social Sharing
