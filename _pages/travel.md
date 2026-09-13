@@ -10,7 +10,7 @@ author: "Name Name"
 
 ## 旅行记录
 
-我想把去过的地方慢慢记录下来。照片不一定很多，但每一次出发都值得留下。
+旅行的不完全记录，持续更新ing……
 
 <div class="travel-memory-list">
 
