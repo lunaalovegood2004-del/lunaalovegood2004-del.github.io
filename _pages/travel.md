@@ -15,14 +15,14 @@ author: "Name Name"
 <div class="travel-memory-list">
 
   <section class="travel-memory">
-    <h3>2010 · 西安</h3><p>大唐不夜城和兵马俑</p>
-    <div class="travel-photo-stack" aria-label="2010年西安旅行照片">
-      <div class="travel-photo-card"><div class="travel-photo-placeholder">西安<br><small>旅行照片</small></div></div>
-      <div class="travel-photo-card"><div class="travel-photo-placeholder">西安<br><small>旅行照片</small></div></div>
-      <div class="travel-photo-card"><div class="travel-photo-placeholder">西安<br><small>旅行照片</small></div></div>
-      <div class="travel-photo-card"><div class="travel-photo-placeholder">西安<br><small>旅行照片</small></div></div>
+    <h3>2011 · 四川</h3><p>大熊猫和九寨沟</p>
+    <div class="travel-photo-stack" aria-label="2011年四川旅行照片">
+      <div class="travel-photo-card"><div class="travel-photo-placeholder">四川<br><small>旅行照片</small></div></div>
+      <div class="travel-photo-card"><div class="travel-photo-placeholder">四川<br><small>旅行照片</small></div></div>
+      <div class="travel-photo-card"><div class="travel-photo-placeholder">四川<br><small>旅行照片</small></div></div>
+      <div class="travel-photo-card"><div class="travel-photo-placeholder">四川<br><small>旅行照片</small></div></div>
     </div>
-    <p class="travel-photo-hint">悬停在照片上，慢慢翻一翻。</p>
+    <p class="travel-photo-hint"></p>
   </section>
 
   <section class="travel-memory">
@@ -33,7 +33,7 @@ author: "Name Name"
       <div class="travel-photo-card"><div class="travel-photo-placeholder">埃及<br><small>旅行照片</small></div></div>
       <div class="travel-photo-card"><div class="travel-photo-placeholder">埃及<br><small>旅行照片</small></div></div>
     </div>
-    <p class="travel-photo-hint">悬停在照片上，慢慢翻一翻。</p>
+    <p class="travel-photo-hint"></p>
   </section>
 
   <section class="travel-memory">
