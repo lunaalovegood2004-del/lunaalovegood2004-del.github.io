@@ -17,23 +17,23 @@ author: "Name Name"
   <section class="travel-memory">
     <h3>2011 · 四川</h3><p>大熊猫和九寨沟</p>
     <div class="travel-photo-stack" aria-label="2011年四川旅行照片">
-      <div class="travel-photo-card"><div class="travel-photo-placeholder">四川<br><small>旅行照片</small></div></div>
-      <div class="travel-photo-card"><div class="travel-photo-placeholder">四川<br><small>旅行照片</small></div></div>
-      <div class="travel-photo-card"><div class="travel-photo-placeholder">四川<br><small>旅行照片</small></div></div>
-      <div class="travel-photo-card"><div class="travel-photo-placeholder">四川<br><small>旅行照片</small></div></div>
+      <div class="travel-photo-card"><img src="{{ '/images/IMG_5185四川.JPG' | relative_url }}" alt="2011年四川旅行照片 1"></div>
+      <div class="travel-photo-card"><img src="{{ '/images/IMG_5186四川.JPG' | relative_url }}" alt="2011年四川旅行照片 2"></div>
+      <div class="travel-photo-card"><img src="{{ '/images/IMG_5187四川.JPG' | relative_url }}" alt="2011年四川旅行照片 3"></div>
+      <div class="travel-photo-card"><img src="{{ '/images/IMG_5188四川.JPG' | relative_url }}" alt="2011年四川旅行照片 4"></div>
     </div>
-    <p class="travel-photo-hint"></p>
+    <p class="travel-photo-hint">悬停在照片上，慢慢翻一翻。</p>
   </section>
 
   <section class="travel-memory">
     <h3>2017 · 埃及</h3><p>人类畏惧时间，而时间畏惧金字塔</p>
     <div class="travel-photo-stack" aria-label="2017年埃及旅行照片">
-      <div class="travel-photo-card"><div class="travel-photo-placeholder">埃及<br><small>旅行照片</small></div></div>
-      <div class="travel-photo-card"><div class="travel-photo-placeholder">埃及<br><small>旅行照片</small></div></div>
-      <div class="travel-photo-card"><div class="travel-photo-placeholder">埃及<br><small>旅行照片</small></div></div>
-      <div class="travel-photo-card"><div class="travel-photo-placeholder">埃及<br><small>旅行照片</small></div></div>
+      <div class="travel-photo-card"><img src="{{ '/images/IMG_5209.埃及JPG.JPG' | relative_url }}" alt="2017年埃及旅行照片 1"></div>
+      <div class="travel-photo-card"><img src="{{ '/images/IMG_5210埃及.JPG' | relative_url }}" alt="2017年埃及旅行照片 2"></div>
+      <div class="travel-photo-card"><img src="{{ '/images/IMG_5211埃及.JPG' | relative_url }}" alt="2017年埃及旅行照片 3"></div>
+      <div class="travel-photo-card"><img src="{{ '/images/IMG_5212埃及.JPG' | relative_url }}" alt="2017年埃及旅行照片 4"></div>
     </div>
-    <p class="travel-photo-hint"></p>
+    <p class="travel-photo-hint">悬停在照片上，慢慢翻一翻。</p>
   </section>
 
   <section class="travel-memory">
