@@ -5,7 +5,7 @@
 # Basic Site Settings
 locale                   : "zh-CN"
 site_theme               : "default"
-title                    : "刘长羽 | Communication · Digital Marketing · AI"
+title                    : "刘长羽 | Communication · Digital Marketing "
 title_separator          : "-"
 name                     : &name "刘长羽"
 description              : &description "新闻与传播硕士｜数字营销｜AI｜个人作品集"
