@@ -14,6 +14,16 @@ author: "Name Name"
 
 研究生开学，进入新的人生旅程。
 
+<div class="life-photo-deck" aria-label="我的开学照片集">
+  <div class="life-photo-stack" id="back-to-school-photo-stack">
+    <div class="life-photo-card"><img src="{{ '/images/IMG_4996开学.JPG' | relative_url }}" alt="我的开学记录 1"></div>
+    <div class="life-photo-card"><img src="{{ '/images/IMG_5020开学.JPG' | relative_url }}" alt="我的开学记录 2"></div>
+    <div class="life-photo-card"><img src="{{ '/images/IMG_5094开学.jpeg' | relative_url }}" alt="我的开学记录 3"></div>
+    <div class="life-photo-card"><img src="{{ '/images/IMG_5125开学.jpeg' | relative_url }}" alt="我的开学记录 4"></div>
+  </div>
+  <p class="life-photo-hint">悬停在照片上，慢慢翻一翻。</p>
+</div>
+
 ## 兴趣与爱好
 
 暑假在家练习厨艺！
