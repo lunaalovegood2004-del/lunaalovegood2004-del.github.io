@@ -18,6 +18,17 @@ author: "Name Name"
 
 暑假在家练习厨艺！
 
+<div class="life-photo-deck" aria-label="我的做饭照片集">
+  <div class="life-photo-stack" id="cooking-photo-stack">
+    <div class="life-photo-card"><img src="{{ '/images/IMG_4766做饭.jpeg' | relative_url }}" alt="我的做饭记录 1"></div>
+    <div class="life-photo-card"><img src="{{ '/images/IMG_4816做饭.jpeg' | relative_url }}" alt="我的做饭记录 2"></div>
+    <div class="life-photo-card"><img src="{{ '/images/IMG_4853做饭.jpeg' | relative_url }}" alt="我的做饭记录 3"></div>
+    <div class="life-photo-card"><img src="{{ '/images/IMG_4859做饭.jpeg' | relative_url }}" alt="我的做饭记录 4"></div>
+    <div class="life-photo-card"><img src="{{ '/images/IMG_4860做饭.jpeg' | relative_url }}" alt="我的做饭记录 5"></div>
+  </div>
+  <p class="life-photo-hint">悬停在照片上，慢慢翻一翻。</p>
+</div>
+
 ## 冰淇淋大赏
 
 我很喜欢吃冰淇淋，所以决定把这里留给我的冰淇淋收藏。每一张照片，都是我吃过、喜欢过的一种味道。
@@ -60,24 +71,25 @@ author: "Name Name"
 
 <script>
 (function () {
-  var stack = document.getElementById('life-photo-stack');
-  if (!stack) return;
-  var timer = null;
-  var moving = false;
-  function flipPhoto() {
-    if (moving || !stack.matches(':hover')) return;
-    var first = stack.firstElementChild;
-    if (!first) return;
-    moving = true;
-    first.classList.add('is-moving');
-    setTimeout(function () {
-      first.classList.remove('is-moving');
-      stack.appendChild(first);
-      moving = false;
-    }, 450);
-  }
-  stack.addEventListener('mouseenter', function () { if (timer) return; timer = setInterval(flipPhoto, 900); });
-  stack.addEventListener('mouseleave', function () { clearInterval(timer); timer = null; });
+  var stacks = document.querySelectorAll('.life-photo-stack');
+  stacks.forEach(function (stack) {
+    var timer = null;
+    var moving = false;
+    function flipPhoto() {
+      if (moving || !stack.matches(':hover')) return;
+      var first = stack.firstElementChild;
+      if (!first) return;
+      moving = true;
+      first.classList.add('is-moving');
+      setTimeout(function () {
+        first.classList.remove('is-moving');
+        stack.appendChild(first);
+        moving = false;
+      }, 450);
+    }
+    stack.addEventListener('mouseenter', function () { if (timer) return; timer = setInterval(flipPhoto, 900); });
+    stack.addEventListener('mouseleave', function () { clearInterval(timer); timer = null; });
+  });
 })();
 </script>
 
